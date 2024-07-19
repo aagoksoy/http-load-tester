@@ -28,7 +28,7 @@ docker pull aagoksoy/http-load-tester:latest
 Start the container and open an interactive shell:
 
 ```
-docker run -it --rm aagoksoy/http-load-tester:latest
+docker run -it --rm -v $(pwd):/app aagoksoy/http-load-tester:latest
 ```
 
 ### Run the Load Test
